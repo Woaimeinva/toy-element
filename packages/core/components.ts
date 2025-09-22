@@ -1,6 +1,6 @@
 // components.ts
 
-import { ErButton, ErBox } from "@toy-element/components";
+import { ErButton, ErBox, ErIcon } from "@toy-element/components";
 import type { Plugin } from "vue";
 
-export default [ErButton, ErBox] as Plugin[];
+export default [ErButton, ErBox, ErIcon] as Plugin[];
