@@ -1,7 +1,7 @@
-import type { Meta, StoryObj, ArgTypes } from '@storybook/vue3-vite'
+import type { Meta, StoryObj, ArgTypes } from '@storybook/vue3'
 import { fn } from '@storybook/test'
 
-import { ErButton } from 'toy-element'
+import { ErButton, ErButtonGroup } from 'toy-element'
 
 type Story = StoryObj<typeof ErButton> & { argTypes: ArgTypes}
 
@@ -76,6 +76,30 @@ export const Default: Story & { args: { content: string } } = {
     },
     template: container(
       `<er-button v-bind="args">{{args.content}}</er-button>`
+    ),
+  }),
+};
+
+export const ButtonGroup: Story & { args: { content: string } } = {
+  argTypes: {
+    content: {
+      control: { type: "text" },
+    },
+  },
+  args: {
+    content: "Button Group",
+  },
+  render: (args: any) => ({
+    components: { ErButtonGroup, ErButton },
+    setup() {
+      return { args };
+    },
+    template: container(
+      `<er-button-group v-bind="args">
+        <er-button type="primary">111</er-button>
+        <er-button type="danger">2222</er-button>
+        <er-button type="danger">3333</er-button>
+      </er-button-group>`
     ),
   }),
 };

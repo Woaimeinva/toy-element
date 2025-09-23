@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, inject } from 'vue';
 
 import { throttle } from 'lodash-es';
 
 import type { ButtonProps, ButtonInstance, ButtonEmits } from './type';
 
 import { ErIcon } from '../Icon';
+
+import { BUTTON_GROUP_CTX_KEY } from './constants'
 
 defineOptions({
     name: 'ErButton'
@@ -35,6 +37,13 @@ const emits = defineEmits<ButtonEmits>()
 defineExpose<ButtonInstance>({
     ref: _ref,
 })
+
+const buttonGroupCtx = inject(BUTTON_GROUP_CTX_KEY, void 0)
+const size = computed(() => buttonGroupCtx?.size ?? props.size)
+const type = computed(() => buttonGroupCtx?.type ?? props.type)
+const disabled = computed(() => {
+    return props.disabled || buttonGroupCtx?.disabled || false
+})
 </script>
 <template>
     <component ref="_ref" :is="tag" :disabled="disabled || loading" :type="tag === 'button' ? nativeType : void 0"
@@ -51,12 +60,7 @@ defineExpose<ButtonInstance>({
                     spin></er-icon>
             </slot>
         </template>
-        <er-icon 
-            v-if="icon && !loading" 
-            :icon="icon" 
-            :style="iconStyle"
-            size="1x"
-            ></er-icon>
+        <er-icon v-if="icon && !loading" :icon="icon" :style="iconStyle" size="1x"></er-icon>
         <slot></slot>
     </component>
 </template>

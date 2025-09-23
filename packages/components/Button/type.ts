@@ -28,3 +28,17 @@ export interface ButtonEmits {
 export interface ButtonInstance {
     ref: Ref<HTMLButtonElement | void>
 }
+
+// ButtonGroupProps类型定义
+export interface ButtonGroupProps {
+    size?: ButtonSize;
+    type?: ButtonType;
+    disabled?: true | false;
+}
+
+// ButtonGroupContext类型定义
+export interface ButtonGroupContext {
+    size?: ButtonSize;
+    type?: ButtonType;
+    disabled?: true | false;
+}
