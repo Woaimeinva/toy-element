@@ -10,5 +10,6 @@
     <er-button type="danger">2222</er-button>
     <er-button type="danger">3333</er-button>
   </er-button-group>
+  <er-alert type="danger" title="danger" description="danger description" :showIcon="true"></er-alert>
 </template>
 
