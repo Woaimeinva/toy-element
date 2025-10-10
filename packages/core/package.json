@@ -1,5 +1,5 @@
 {
-  "name": "toy-element-chenhao",
+  "name": "toy-element",
   "_name": "包名,发布到npm的唯一标识",
   "version": "1.0.1",
   "description": "Components library by Vue3 + TS",
@@ -19,6 +19,17 @@
   "_module": "ES模块入口,供现代构建工具使用,支持Tree-Shaking",
   "types": "./dist/types/core/index.d.ts",
   "_types": "TypeScript类型声明入口,提供类型提示",
+   "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/umd/index.umd.cjs",
+      "types": "./dist/types/core/index.d.ts"
+    },
+    "./dist/": {
+      "import": "./dist/",
+      "require": "./dist/"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "run-s build-only move-style",
@@ -36,5 +47,8 @@
   "packageManager": "pnpm@10.12.4",
   "devDependencies": {
     "vite-plugin-dts": "3.9.1"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.20"
   }
 }

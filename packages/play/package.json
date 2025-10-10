@@ -10,6 +10,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "dependencies": {
+    "toy-element": "workspace:*"
+  },
   "devDependencies": {
     "@chromatic-com/storybook": "4.1.1",
     "@storybook/addon-a11y": "^8.6.14",
