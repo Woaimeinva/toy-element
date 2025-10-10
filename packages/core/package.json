@@ -1,7 +1,7 @@
 {
   "name": "toy-element-chenhao",
   "_name": "包名,发布到npm的唯一标识",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Components library by Vue3 + TS",
   "type": "module",
   "_type": "声明包使用ES模块规范,默认支持import,export",
