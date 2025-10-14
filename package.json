@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"todo\"",
     "dev": "pnpm --filter @toy-element/play dev ",
-    "build": "pnpm --filter toy-element build",
+    "build": "pnpm --filter toy-element-yasina build",
     "docs:dev": "pnpm --filter @toy-element/docs docs:dev",
     "docs:build": "pnpm --filter @toy-element/docs docs:build",
     "story:dev": "pnpm --filter @toy-element/play storybook"
@@ -43,7 +43,7 @@
     "@toy-element/theme": "workspace:*",
     "@toy-element/utils": "workspace:*",
     "lodash-es": "^4.17.21",
-    "toy-element": "workspace:*",
+    "toy-element-yasina": "workspace:*",
     "vue": "^3.5.20"
   }
 }
