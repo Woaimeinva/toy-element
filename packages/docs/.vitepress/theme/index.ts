@@ -1,15 +1,15 @@
 import DefaultTheme from "vitepress/theme";
 import { type App } from "vue";
-import ToyElement from 'toy-element';
-import { ElementPlusContainer } from "@vitepress-preview/component";
+import ToyElement from 'toy-element-yasina';
+import { ElementPlusContainer } from "@vitepress-demo-preview/component";
 
-import "@vitepress-preview/component/style.css";
-import "eric-ui/dist/index.css";
+import "@vitepress-demo-preview/component/dist/style.css";
+import "toy-element-yasina/dist/index.css";
 
 export default {
   ...DefaultTheme,
   enhanceApp({ app }: { app: App }) {
     app.component("demo-preview", ElementPlusContainer);
-    app.use(EricUI, { locale: zhCn });
+    app.use(ToyElement);
   },
 };

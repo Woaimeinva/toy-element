@@ -1,8 +1,8 @@
 import type { Meta, StoryObj, ArgTypes } from '@storybook/vue3'
 import { fn } from '@storybook/test'
 
-import { ErButton, ErButtonGroup } from 'toy-element'
-
+import { ErButton, ErButtonGroup } from 'toy-element-yasina'
+import 'toy-element-yasina/dist/index.css'
 type Story = StoryObj<typeof ErButton> & { argTypes: ArgTypes}
 
 const meta: Meta<typeof ErButton> = {

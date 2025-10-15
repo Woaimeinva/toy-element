@@ -1,25 +1,15 @@
 {
-  "name": "toy-element",
-  "_name": "包名,发布到npm的唯一标识",
-  "version": "1.0.1",
-  "description": "Components library by Vue3 + TS",
+  "name": "toy-element-yasina",
+  "version": "1.0.7",
+  "description": "Component library by Vue3 + TS",
   "type": "module",
-  "_type": "声明包使用ES模块规范,默认支持import,export",
+  "main": "./dist/umd/index.umd.cjs",
+  "module": "./dist/es/index.js",
+  "types": "./dist/types/core/index.d.ts",
   "files": [
     "dist"
   ],
-  "_files": "发布到npm时,包含的文件/目录(仅包含dist构建产物)",
-  "sideEffects": [
-    "./dist/index.css"
-  ],
-  "_sideEffects": "告诉构建工具哪些文件包含副作用(即执行时会影响全局状态,不能被tree-shaking剔除),因为css加载后会影响页面样式,即使没有被显示引用,也不应该被删除",
-  "main": "./dist/umd/index.umd.cjs",
-  "_main": "CommonJs模块入口,供Node.js或旧版构建工具使用",
-  "module": "./dist/es/index.js",
-  "_module": "ES模块入口,供现代构建工具使用,支持Tree-Shaking",
-  "types": "./dist/types/core/index.d.ts",
-  "_types": "TypeScript类型声明入口,提供类型提示",
-   "exports": {
+  "exports": {
     ".": {
       "import": "./dist/es/index.js",
       "require": "./dist/umd/index.umd.cjs",
@@ -30,25 +20,33 @@
       "require": "./dist/"
     }
   },
+  "sideEffects": [
+    "./dist/index.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "run-s build-only move-style",
-    "build-only": "run-p build-es build-umd",
+    "build-only": "run-p build-umd build-es",
     "build-umd": "vite build --config vite.umd.config.ts",
     "build-es": "vite build --config vite.es.config.ts",
     "move-style": "move-file dist/es/index.css dist/index.css"
   },
   "dependencies": {
-    "@toy-element/components": "workspace:*"
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@popperjs/core": "^2.11.8",
+    "async-validator": "^4.2.5"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.20"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.12.4",
   "devDependencies": {
-    "vite-plugin-dts": "3.9.1"
-  },
-  "peerDependencies": {
-    "vue": "^3.5.20"
+    "vite-plugin-dts": "^3.9.1",
+    "@toy-element/components": "workspace:*"
   }
 }
