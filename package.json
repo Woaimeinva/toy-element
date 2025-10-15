@@ -9,7 +9,8 @@
     "build": "pnpm --filter toy-element-yasina build",
     "docs:dev": "pnpm --filter @toy-element/docs docs:dev",
     "docs:build": "pnpm --filter @toy-element/docs docs:build",
-    "story:dev": "pnpm --filter @toy-element/play storybook"
+    "story:dev": "pnpm --filter @toy-element/play storybook",
+    "build": "pnpm --filter toy-element build"
   },
   "keywords": [],
   "author": "",
@@ -36,12 +37,19 @@
     "typescript": "^5.8.3",
     "vite": "^5.4.19",
     "vitest": "^1.6.1",
-    "vue-tsc": "^1.8.27"
+    "vue-tsc": "^1.8.27",
+    "@popperjs/core": "^2.11.8",
+    "async-validator": "^4.2.5"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "@toy-element/hooks": "workspace:*",
     "@toy-element/theme": "workspace:*",
     "@toy-element/utils": "workspace:*",
+    "@vitepress-demo-preview/component": "^2.5.2",
+    "@vitepress-demo-preview/plugin": "^1.4.1",
     "lodash-es": "^4.17.21",
     "toy-element-yasina": "workspace:*",
     "vue": "^3.5.20"
