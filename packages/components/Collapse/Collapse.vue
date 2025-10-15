@@ -8,20 +8,23 @@ defineOptions({
 })
 
 // 定义组件 props
-const props = defineProps<CollapseProps>()
+const props = defineProps < CollapseProps > ()
 // 定义组件 emits
-const emits = defineEmits<CollapseItemEmits>()
+const emits = defineEmits < CollapseItemEmits > ()
 
-const activeNames = ref<CollapseItemName[]>(props.modelValue || [])
+const activeNames = ref < CollapseItemName[] > (props.modelValue || [])
 
 if (props.accordion && activeNames.value.length > 1) {
     console.warn('Accordion mode only allows one active item at a time.');
 }
 
 function handleItemClick(item: CollapseItemName) {
+    // 展开的项，用一个数组来存放
     let _activeNames = [...activeNames.value];
     if (props.accordion) {
+        // 手风琴模式，只有一个项可以展开，如果已经展开则收起，收起则展开
         _activeNames = [_activeNames[0] === item ? "" : item];
+        // 通过这个方法更改 activeNames，并通知父组件
         updateActiveNmaes(_activeNames);
         return;
     }
@@ -31,8 +34,8 @@ function handleItemClick(item: CollapseItemName) {
     } else {
         _activeNames.push(item);
     }
-    console.log(activeNames.value,'name');
-    
+    console.log(activeNames.value, 'name');
+
     updateActiveNmaes(_activeNames);
 }
 
@@ -44,7 +47,11 @@ function updateActiveNmaes(newNames: CollapseItemName[]) {
 
 watch(
     () => props.modelValue,
-    (newNames) => updateActiveNmaes(newNames),
+    (newNames) => {
+        if (newNames) {
+            updateActiveNmaes(newNames)
+        }
+    },
 )
 
 

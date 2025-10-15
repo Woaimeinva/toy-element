@@ -47,7 +47,6 @@ function handleClick() {
                 </div>
             </div>
         </transition>
-
     </div>
 </template>
 <style scoped>
