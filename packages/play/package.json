@@ -11,7 +11,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "toy-element": "workspace:*"
+    "@toy-element/components": "workspace:*"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "4.1.1",
