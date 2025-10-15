@@ -5,11 +5,11 @@ const activeNames = ref(['1']);
 </script>
 
 <template>
-  <er-button type="danger">111</er-button>
+  <er-button type="danger" circle icon="search"></er-button>
   <er-icon type="danger" icon="search" spin></er-icon>
   <er-button-group>
-    <er-button type="primary">111</er-button>
-    <er-button type="danger">2222</er-button>
+    <er-button type="primary" plain>111</er-button>
+    <er-button type="danger" round>2222</er-button>
     <er-button type="danger">3333</er-button>
   </er-button-group>
   <er-alert type="danger" title="danger" description="danger description" :showIcon="true"></er-alert>

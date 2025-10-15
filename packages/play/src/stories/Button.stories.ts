@@ -19,6 +19,9 @@ const meta: Meta<typeof ErButton> = {
       control: { type: "select" },
       options: ["large", "default", "small", ""],
     },
+    circle: {
+      control: "boolean",
+    },
     disabled: {
       control: "boolean",
     },

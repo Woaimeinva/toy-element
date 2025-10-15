@@ -9,8 +9,7 @@
     "build": "pnpm --filter toy-element-yasina build",
     "docs:dev": "pnpm --filter @toy-element/docs docs:dev",
     "docs:build": "pnpm --filter @toy-element/docs docs:build",
-    "story:dev": "pnpm --filter @toy-element/play storybook",
-    "build": "pnpm --filter toy-element build"
+    "story:dev": "pnpm --filter @toy-element/play storybook"
   },
   "keywords": [],
   "author": "",

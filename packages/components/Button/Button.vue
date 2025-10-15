@@ -50,9 +50,9 @@ const disabled = computed(() => {
         :autofocus="autofocus" class="er-button" :class="{
             [`er-button--${type}`]: type,
             [`er-button--${size}`]: size,
-            'er-button-circle': circle,
-            'er-button-round': round,
-            'er-button-plain': plain,
+            'is-circle': circle,
+            'is-round': round,
+            'is-plain': plain,
         }" @click="(e: MouseEvent) => useThrottle ? handleBtnClickThrottle(e) : handleBtnClick(e)">
         <template v-if="loading">
             <slot name="loading">
