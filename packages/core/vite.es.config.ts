@@ -21,6 +21,7 @@ const COMP_NAMES = [
     'Switch',
     'Upload',
     'Tooltip',
+    'Marquee'
 ] as const;
 
 export default defineConfig({

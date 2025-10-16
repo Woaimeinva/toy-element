@@ -1,0 +1,16 @@
+.marquee {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.marquee-content {
+    display: flex;
+    width: 200%;
+}
+
+.inner {
+    width: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
