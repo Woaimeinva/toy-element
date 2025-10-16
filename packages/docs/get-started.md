@@ -10,7 +10,7 @@ next:
 
 
 ```bash
-npm i @toy-element-yasina --save
+npm i toy-element-yasina --save
 ```
 
 ## 开始使用
