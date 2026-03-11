@@ -5,22 +5,10 @@ import dts from 'vite-plugin-dts'
 
 const COMP_NAMES = [
     'Alert',
+    'Box',
     'Button',
     'Collapse',
-    'Dropdown',
-    'Form',
     'Icon',
-    'Input',
-    'Loading',
-    'Message',
-    'MessageBox',
-    'Notification',
-    'Overlay',
-    'Popconfirm',
-    'Select',
-    'Switch',
-    'Upload',
-    'Tooltip',
     'Marquee'
 ] as const;
 

@@ -1,0 +1,15 @@
+@keyframes shake-horizontal {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+}
+
+/* 抖动类名（可直接复用） */
+.shake {
+  /* 动画：名称 时长 缓动 次数 */
+  animation: shake-horizontal 1s ease-in-out infinite;
+  /* 防止抖动时元素位移 */
+  transform-origin: center;
+}
