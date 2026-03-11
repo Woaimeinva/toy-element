@@ -35,7 +35,7 @@ import {
   withScopeId
 } from "./chunk-ZQMX7N6Q.js";
 
-// ../../node_modules/.pnpm/@vitepress-demo-preview+com_1d68a6fbddfe57937cc313177f1bcb03/node_modules/@vitepress-demo-preview/component/dist/preview-component.js
+// ../../node_modules/.pnpm/@vitepress-demo-preview+component@2.5.2_vitepress@1.0.0-rc.44_@algolia+client-search@5._1d68a6fbddfe57937cc313177f1bcb03/node_modules/@vitepress-demo-preview/component/dist/preview-component.js
 var Go = Object.defineProperty;
 var Yo = (e, t, o) => t in e ? Go(e, t, { enumerable: true, configurable: true, writable: true, value: o }) : e[t] = o;
 var Z = (e, t, o) => (Yo(e, typeof t != "symbol" ? t + "" : t, o), o);

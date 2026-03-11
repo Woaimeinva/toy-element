@@ -17,41 +17,42 @@ prev:
 
 ## 基础用法
 
-Shake 组件
+移入马里奥来碰撞方块
 
 ::: preview
 demo-preview=../demo/shake/Basic.vue
 :::
 
-## 滚动方向
+## 按钮抖动
 
-通过设置 `direction` 属性来改变跑马灯的滚动方向，默认方向为 `right`
-
-::: preview
-demo-preview=../demo/marquee/Direction.vue
-:::
-
-## 滚动速度
-
-可以设置 Marquee 组件的滚动速度， `speed` 属性决定 Marquee 组件的滚动速度， 该属性接受一个 `number`，默认为 `1`。
+按钮点击时水平抖动
 
 ::: preview
-demo-preview=../demo/marquee/Speed.vue
+demo-preview=../demo/shake/Button.vue
 :::
 
+## 自定义抖动
 
+自定义抖动幅度、频率、方向和周期
 
-## Marquee API
+::: preview
+demo-preview=../demo/shake/Custom.vue
+:::
+
+## Shake API
 
 ### Props
 
 | Name        | Description  | Type                                                 | Default |
 | ----------- | ------------ | ---------------------------------------------------  | ------- |
-| direction   | 滚动方向      | `string`                                             | right    |
-| speed       | 滚动速度      | `number`                                             | 1       |
+| direction   | 抖动方向      | `string`                                             | row     |
+| amplitude   | 抖动幅度      | `number`                                             | 3       |
+| duration    | 抖动周期      | `number`                                             | 800     |
+| frequency   | 抖动频率      | `number`                                             | 4       |
+| active      | 是否激活抖动  | `boolean`                                            | false   |
 
 ### Slots
 
 | Name    | Description                         |
 | ------- | ----------------------------------- |
-| default | 默认插槽，用于设置 Marquee 的内容     |      
+| default | 默认插槽，用于设置抖动的内容        |

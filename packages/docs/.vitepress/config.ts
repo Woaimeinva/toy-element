@@ -39,6 +39,7 @@ export default defineConfig({
         items: [
           { text: "Alert 提示", link: "components/alert" },
           { text: "Marquee 跑马灯", link: "components/marquee" },
+          { text: "Shake 抖动", link: "components/shake" },
         ],
       },
     ],

@@ -11,7 +11,7 @@ import {
   text
 } from "./chunk-WDFM2ZMZ.js";
 
-// ../../node_modules/.pnpm/@fortawesome+vue-fontawesom_0921d2bf3e5641dd8b3e31d860b9700b/node_modules/@fortawesome/vue-fontawesome/index.es.js
+// ../../node_modules/.pnpm/@fortawesome+vue-fontawesome@3.1.2_@fortawesome+fontawesome-svg-core@6.7.2_vue@3.5.20_typescript@5.8.3_/node_modules/@fortawesome/vue-fontawesome/index.es.js
 function _arrayLikeToArray(r, a) {
   (null == a || a > r.length) && (a = r.length);
   for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
