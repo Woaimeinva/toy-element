@@ -3,8 +3,8 @@ title: Marquee
 description: Marquee 组件文档
 
 next:
-  link: /get-started
-  text: 快速开始
+  link: /components/shake
+  text: Shake 组件
 
 prev:
   link: /components/alert
