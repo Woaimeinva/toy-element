@@ -23,12 +23,20 @@ prev:
 demo-preview=../demo/shake/Basic.vue
 :::
 
-## 按钮抖动
+## 点击反馈
 
 按钮点击时水平抖动
 
 ::: preview
 demo-preview=../demo/shake/Button.vue
+:::
+
+## 消息提示
+
+消息提示
+
+::: preview
+demo-preview=../demo/shake/Hover.vue
 :::
 
 ## 自定义抖动
