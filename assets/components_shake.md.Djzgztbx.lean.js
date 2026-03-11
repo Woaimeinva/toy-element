@@ -1,1 +1,0 @@
-import{_ as e,i as t,o as a}from"./chunks/framework.NcGZz0V2.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"components/shake.md","filePath":"components/shake.md"}'),o={name:"components/shake.md"};function s(n,r,c,p,m,i){return a(),t("div")}const f=e(o,[["render",s]]);export{d as __pageData,f as default};
