@@ -3,8 +3,8 @@ title: Collapse
 description: Collapse 组件文档
 
 next:
-  link: components/alert
-  text: Alert 提示
+  link: components/watermark
+  text: Watermark 水印
 
 prev:
   link: components/button

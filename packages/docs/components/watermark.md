@@ -3,12 +3,12 @@ title: Watermark
 description: Watermark 组件文档
 
 next:
-  link: /get-started
-  text: 快速开始
+  link: /components/alert
+  text: Alert 组件
 
 prev:
-  link: /components/shake
-  text: Shake 组件
+  link: /components/collapse
+  text: Collapse 组件
 ---
 
 # Watermark 水印

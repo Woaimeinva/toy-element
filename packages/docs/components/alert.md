@@ -7,8 +7,8 @@ next:
   text: Marquee 跑马灯
   
 prev:
-  link: /components/collapse
-  text: Collapse 折叠面板
+  link: /components/watermark
+  text: Watermark 水印
 ---
 
 # Alert 提示
